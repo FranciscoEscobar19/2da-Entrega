@@ -3,8 +3,9 @@ const catGuerra = document.getElementById ("catGuerra");
 const catAventura = document.getElementById("catAventura");
 const catCarreras = document.getElementById ("catCarreras");
 const catArcades = document.getElementById("catArcade");
-const catOtros = document.getElementById("catOtros")
+const idSlider = document.getElementById ("idSlider")
 const categorias =[];
+
 const Categorias = ()=> {
     fetch(apiJuegos)
     .then ((response)=>response.json())
@@ -12,81 +13,102 @@ const Categorias = ()=> {
         verCat.forEach(e=> {
             const nombreCategoria =e.categoria;
         if (!categorias[nombreCategoria]) categorias[nombreCategoria]=[];
-            categorias[nombreCategoria].push(e) 
-            console.log (nombreCategoria)   
+        categorias[nombreCategoria].push(e)   
+        switch (nombreCategoria){
+            case "Acción":
+                const verguerra = document.createElement("div")
+                verguerra.className="clasecard"
+                verguerra.innerHTML =`
+                    <div class="card vercardsje" style="width: 18rem;">
+                    <img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
+                    <div class="card-body">
+                    <h5 class="card-title">${e.nombre}</h5>
+                    <p class="card-text">$${e.precio}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                    `;
+                catGuerra.append(verguerra)
+                    // });
+             break;
+            case "Aventura":
+                 const veraventura = document.createElement("div")
+                 veraventura.className="clasecard"
+                veraventura.innerHTML =`
+                        <div class="card vercardsje" style="width: 18rem;">
+                        <img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
+                        <div class="card-body">
+                        <h5 class="card-title">${e.nombre}</h5>
+                        <p class="card-text">$${e.precio}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        </div>
+                        `;
+                catAventura.append(veraventura)
+             break;
+            case "Carreras":
+                 const verCarreras = document.createElement("div")
+                 verCarreras.className="clasecard"
+                verCarreras.innerHTML =`
+                            <div class="card vercardsje" style="width: 18rem;">
+                            <img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
+                            <div class="card-body">
+                            <h5 class="card-title">${e.nombre}</h5>
+                            <p class="card-text">$${e.precio}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                            </div>
+                              `;
+                catCarreras.append(verCarreras);
+             break;
+             case "Arcades":
+                const verArcades = document.createElement("div")
+                verArcades.className="clasecard"
+                verArcades.innerHTML =`
+                            <div class="card vercardsje" style="width: 18rem;">
+                            <img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
+                            <div class="card-body">
+                            <h5 class="card-title">${e.nombre}</h5>
+                            <p class="card-text">$${e.precio}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                            </div>
+                            `;
+                catArcades.append(verArcades)
+            break;
+            default:
+                console.log ("No hay categorias existentes")  
+            }
         })
-        
-        // Categoria Guerra
-        const guerra = categorias.Acción;
-        guerra.forEach((e)=>{
-            const verguerra = document.createElement("div")
-      verguerra.className="clasecard"
-    verguerra.innerHTML =`
-    <div class="card vercardsje" style="width: 18rem;">
-  <img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
-  <div class="card-body">
-    <h5 class="card-title">${e.nombre}</h5>
-    <p class="card-text">$${e.precio}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    `;
-    catGuerra.append(verguerra)
-    });
-    // Categoria aventura
-    const aventura = categorias.Aventura;
-    aventura.forEach((e)=>{ 
-        const veraventura = document.createElement("div")
-  veraventura.className="clasecard"
-veraventura.innerHTML =`
-<div class="card vercardsje" style="width: 18rem;">
-<img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
-<div class="card-body">
-<h5 class="card-title">${e.nombre}</h5>
-<p class="card-text">$${e.precio}</p>
-<a href="#" class="btn btn-primary">Go somewhere</a>
-</div>
-</div>
-`;
-catAventura.append(veraventura)
-});
-
-// Categoria Carreras
-const carreras = categorias.Carreras;
-carreras.forEach((e)=>{ 
-    const verCarreras = document.createElement("div")
-verCarreras.className="clasecard"
-verCarreras.innerHTML =`
-<div class="card vercardsje" style="width: 18rem;">
-<img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
-<div class="card-body">
-<h5 class="card-title">${e.nombre}</h5>
-<p class="card-text">$${e.precio}</p>
-<a href="#" class="btn btn-primary">Go somewhere</a>
-</div>
-</div>
-`;
-catCarreras.append(verCarreras)
-});
-
-// Categoria Arcades
-const arcades = categorias.Arcades;
-arcades.forEach((e)=>{ 
-    const verArcades = document.createElement("div")
-verArcades.className="clasecard"
-verArcades.innerHTML =`
-<div class="card vercardsje" style="width: 18rem;">
-<img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
-<div class="card-body">
-<h5 class="card-title">${e.nombre}</h5>
-<p class="card-text">$${e.precio}</p>
-<a href="#" class="btn btn-primary">Go somewhere</a>
-</div>
-</div>
-`;
-catArcades.append(verArcades)
-});
-
     })
+    .catch (error => console.error(error));
 }
 Categorias()
+
+const slider = () =>{
+    fetch(apiJuegos)
+    .then ((response)=>response.json())
+    .then (sliderTrue =>{
+        sliderTrue.forEach(e => {
+            const sliderCheck = e.Favorito;
+            switch (sliderCheck){
+                case "true":
+                    const verSlider = document.createElement("div")
+                    verSlider.innerHTML=`
+                    <div id="idSlider"class="carousel-item active">
+                    <img src="${e.urlPortada}" class="d-block w-100" alt="${e.altImagen}">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>${e.nombre}</h5>
+                      <p >${e.descripción}</p>
+                    </div>
+                  </div>
+                    `
+                    idSlider.append(verSlider)
+                break;
+            }
+        })
+
+})
+    .catch (error => console.error(error));
+}
+slider()
