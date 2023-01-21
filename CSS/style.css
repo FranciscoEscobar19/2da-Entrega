@@ -8,3 +8,21 @@ footer{
 .lineaBuscador{
     background-color: rgba(7, 7, 7, 0.562);
 }
+.clasecard {
+
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+   
+}
+.cardStyle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px ;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 30px;
+}
