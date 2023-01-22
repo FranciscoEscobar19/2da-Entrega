@@ -25,12 +25,12 @@ const Categorias = ()=> {
                     <div class="card-body">
                     <h5 class="card-title">${e.nombre}</h5>
                     <p class="card-text">$${e.precio}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Go somewhere</a>
                     </div>
                     </div>
                     `;
                 catGuerra.append(verguerra)
-                    // });
+                    
              break;
             case "Aventura":
                  const veraventura = document.createElement("div")
@@ -41,7 +41,7 @@ const Categorias = ()=> {
                         <div class="card-body">
                         <h5 class="card-title">${e.nombre}</h5>
                         <p class="card-text">$${e.precio}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Go somewhere</a>
                         </div>
                         </div>
                         `;
@@ -56,7 +56,7 @@ const Categorias = ()=> {
                             <div class="card-body">
                             <h5 class="card-title">${e.nombre}</h5>
                             <p class="card-text">$${e.precio}</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Go somewhere</a>
                             </div>
                             </div>
                               `;
@@ -71,7 +71,7 @@ const Categorias = ()=> {
                             <div class="card-body">
                             <h5 class="card-title">${e.nombre}</h5>
                             <p class="card-text">$${e.precio}</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Go somewhere</a>
                             </div>
                             </div>
                             `;
@@ -115,5 +115,5 @@ const slider = () =>{
 slider()
 
 const showProfile = (id)=>{
-    window.location =`../HTML/perfilJuegos.html#${id}`;
+    window.location =`../HTML/DetallesDeJuego.html#${id}`;
 }
