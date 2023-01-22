@@ -1,3 +1,4 @@
+
 const apiJuegos = "http://localhost:3000/Juegos"
 const catGuerra = document.getElementById ("catGuerra");
 const catAventura = document.getElementById("catAventura");
@@ -112,3 +113,7 @@ const slider = () =>{
     .catch (error => console.error(error));
 }
 slider()
+
+const showProfile = (id)=>{
+    window.location =`../HTML/perfilJuegos.html#${id}`;
+}
