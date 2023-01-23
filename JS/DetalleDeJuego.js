@@ -5,6 +5,8 @@ const detallePortada = document.getElementById("detallePortada");
 const detalleNombre = document.getElementById("detalleNombre")
 const detalleDescripcion= document.getElementById("detalleDescripcion")
 const detalleFechaDesa = document.getElementById("detalleFechaDesa")
+const detallePrecio = document.getElementById("detallePrecio")
+const detalleCategoria = document.getElementById("detalleCategoria")
 const idjuegos = window.location.hash.substring(1);
 
 const mostrarPerfil = ()=>{
@@ -16,7 +18,7 @@ const mostrarPerfil = ()=>{
                 
                 const soyvideo = document.createElement("div");
                 soyvideo.innerHTML=`
-                <video autoplay loop muted class="img-fluid" source src="${e.urlVideo}" type="video/mp4"></video>
+                <video autoplay loop muted class="img-fluid" controls source src="${e.urlVideo}" type="video/mp4"></video>
                 `
                 detalleVideo.append(soyvideo);
 
@@ -43,12 +45,17 @@ const mostrarPerfil = ()=>{
                 `;
                 detalleNombre.append(soynombre);
 
-                const soydescripcion=document.createElement("div")
-                soydescripcion.innerHTML=`
-                <h5 class="d-flex fw-semibold">${e.descripción} </h5>
+                const soycategoria =document.createElement("div");
+                soycategoria.innerHTML=`
+                <h4> Categoría: ${e.categoria} </h4>
+                `;
+                detalleCategoria.append(soycategoria)
+                
+                const soyPrecio=document.createElement("div");
+                soyPrecio.innerHTML=`
                 <h4>Precio: $${e.precio} </h4>
                 `;
-                detalleDescripcion.append(soydescripcion);
+                detallePrecio.append(soyPrecio);
 
                 const soyfechadesa= document.createElement("div")
                 soyfechadesa.innerHTML=`
@@ -56,6 +63,12 @@ const mostrarPerfil = ()=>{
                 <p class="fw-bolder"> Desarrolladores: ${e.desarrollador}</p> 
                 `;
                 detalleFechaDesa.append(soyfechadesa);
+
+                const soydescripcion=document.createElement("div")
+                soydescripcion.innerHTML=`
+                <h5 class="d-flex fw-semibold m-2 text-center">${e.descripción} </h5>
+                `;
+                detalleDescripcion.append(soydescripcion);
             }
             })
             })   

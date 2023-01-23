@@ -3,7 +3,7 @@ const apiJuegos = "http://localhost:3000/Juegos"
 const catGuerra = document.getElementById ("catGuerra");
 const catAventura = document.getElementById("catAventura");
 const catCarreras = document.getElementById ("catCarreras");
-const catArcades = document.getElementById("catArcade");
+const catDeportes = document.getElementById("catDeportes");
 const idSlider = document.getElementById ("idSlider")
 const categorias =[];
 
@@ -62,10 +62,10 @@ const Categorias = ()=> {
                               `;
                 catCarreras.append(verCarreras);
              break;
-             case "Arcades":
-                const verArcades = document.createElement("div")
-                verArcades.className="clasecard"
-                verArcades.innerHTML =`
+             case "Deportes":
+                const verdeportes = document.createElement("div")
+                verdeportes.className="clasecard"
+                verdeportes.innerHTML =`
                             <div class="card vercardsje" style="width: 18rem;">
                             <img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
                             <div class="card-body">
@@ -75,7 +75,7 @@ const Categorias = ()=> {
                             </div>
                             </div>
                             `;
-                catArcades.append(verArcades)
+                catDeportes.append(verdeportes)
             break;
             default:
                 console.log ("No hay categorias existentes")  
@@ -98,9 +98,11 @@ const slider = () =>{
                     verSlider.innerHTML=`
                     <div id="idSlider"class="carousel-item active">
                     <img src="${e.urlPortada}" class="d-block w-100" alt="${e.altImagen}">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>${e.nombre}</h5>
-                      <p >${e.descripción}</p>
+                    <div class="carousel-caption d-none d-md-block ">
+                      <h5 class="colorLetraSlider">${e.nombre}</h5>
+                      <h5 class="colorLetraSlider">${e.categoria}</h5>
+                      <p class="colorLetraSlider" >${e.descripción}</p>
+                      <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Ver Mas</a>
                     </div>
                   </div>
                     `
