@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="container crud">
+        <h2 class="crud-title col-9">Admin Users</h2>
+        <form class="row">
+            
+                <div class="col-md-4">
+
+                  
+                        <div class="mb-3">
+                            <input type="text" name="nombre" placeholder="nombre" class="form-control" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="Email" placeholder="Email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" name="Edad" placeholder="Edad del usuario" class="form-control" required>
+                        </div>
+                         
+                    
+
+                        
+                      
+                </div>
+                <div class="col-md-4">
+                  
+                    <div class="mb-3">
+                        <div class="mb-3">
+                            <label class="form-check-label" for="flexCheckDefault" >
+                                
+                               fecha de creacion del usuario
+                              </label>
+                            <input type="date" name="DateUsers"  class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="mb-3">
+                        
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          User Activo
+                        </label>
+                    
+                </div>
+    
+         
+
+                 
+                </div>
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <input type="submit" value="enviar" class="btn btn-dark col-3">
+                        <input type="hidden" name="id">
+                    </div>
+                </div>
+           
+            
+        </form>
+        <hr>
+        <article class="container">
+            <div class="row">
+                <div class="col-9">
+                    <table class="crud-table table table-striped table-dark table-hover table-sm">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Age</th>
+                                <th>Date User</th>
+                                <th>Activo</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody> 
+                          
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+        </article>
+        <template id="crud-template">
+            <tr>
+                <td class="name"></td>
+                <td class="Email"></td>
+                <td class="Age"></td>
+                <td class="Date User"></td>
+                <td class="Activo"></td>
+                
+
+
+                <td>
+                    <buton class="edit btn btn-primary col-4">Editar</buton>
+                    <buton class="delete btn btn-danger col-4">Elimnar</buton>
+                </td>
+            </tr>
+        </template>
+    </section>
+
+    
+</body>
+</html>
