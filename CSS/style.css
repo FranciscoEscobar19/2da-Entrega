@@ -1,3 +1,16 @@
+.colorGeneral{
+    background-color: rgb(37, 1, 37);
+    color: white;
+}
+Nav{
+    background-color: rgb(37, 1, 37);
+    color: white;
+}
+.colorLetra{
+    color: white;
+    background-color: rgb(78, 4, 78);
+    border: rgb(78, 4, 78) 1px solid;
+}
 .botonSecion{
     border-radius: 20px;
     border: 1px solid black;
@@ -15,6 +28,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     margin: 10px;
+    
    
 }
 .cardStyle{
@@ -25,6 +39,7 @@ footer{
     margin-top: 40px;
     padding: 30px;
     border-radius: 30px;
+    
 }
 .acomodarSlider{
     width: 80%;
@@ -35,4 +50,7 @@ footer{
     color: black;
     background-color: rgba(255, 255, 255, 0.311);
     border-radius: 5px;
+}
+.classSlider{
+    justify-content: center;
 }

@@ -20,12 +20,12 @@ const Categorias = ()=> {
                 const verguerra = document.createElement("div")
                 verguerra.className="clasecard"
                 verguerra.innerHTML =`
-                    <div class="card vercardsje" style="width: 18rem;">
+                    <div class="card vercardsje" style="width: 18rem; background-color: black;">
                     <img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
                     <div class="card-body">
                     <h5 class="card-title">${e.nombre}</h5>
                     <p class="card-text">$${e.precio}</p>
-                    <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Go somewhere</a>
+                    <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Conocé mas</a>
                     </div>
                     </div>
                     `;
@@ -36,12 +36,12 @@ const Categorias = ()=> {
                  const veraventura = document.createElement("div")
                  veraventura.className="clasecard"
                 veraventura.innerHTML =`
-                        <div class="card vercardsje" style="width: 18rem;">
+                        <div class="card vercardsje " style="width: 18rem; background-color: black;">
                         <img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
                         <div class="card-body">
                         <h5 class="card-title">${e.nombre}</h5>
-                        <p class="card-text">$${e.precio}</p>
-                        <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Go somewhere</a>
+                        <h4 class="card-text ">$${e.precio}<a href="#" class="btn btn-primary ms-5" onclick="showProfile('${e.id}')">Conocé mas</a></h4>
+                        
                         </div>
                         </div>
                         `;
@@ -51,12 +51,12 @@ const Categorias = ()=> {
                  const verCarreras = document.createElement("div")
                  verCarreras.className="clasecard"
                 verCarreras.innerHTML =`
-                            <div class="card vercardsje" style="width: 18rem;">
+                            <div class="card vercardsje" style="width: 18rem; background-color: black;">
                             <img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
                             <div class="card-body">
                             <h5 class="card-title">${e.nombre}</h5>
                             <p class="card-text">$${e.precio}</p>
-                            <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Go somewhere</a>
+                            <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Conocé mas</a>
                             </div>
                             </div>
                               `;
@@ -66,12 +66,12 @@ const Categorias = ()=> {
                 const verdeportes = document.createElement("div")
                 verdeportes.className="clasecard"
                 verdeportes.innerHTML =`
-                            <div class="card vercardsje" style="width: 18rem;">
+                            <div class="card vercardsje" style="width: 18rem; background-color: black;">
                             <img src="${e.urlPortada}" class="card-img-top" alt="${e.altImagen}">
                             <div class="card-body">
                             <h5 class="card-title">${e.nombre}</h5>
                             <p class="card-text">$${e.precio}</p>
-                            <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Go somewhere</a>
+                            <a href="#" class="btn btn-primary" onclick="showProfile('${e.id}')">Conocé mas</a>
                             </div>
                             </div>
                             `;
@@ -95,6 +95,7 @@ const slider = () =>{
             switch (sliderCheck){
                 case "true":
                     const verSlider = document.createElement("div")
+                verSlider.className="classSlider"
                     verSlider.innerHTML=`
                     <div id="idSlider"class="carousel-item active">
                     <img src="${e.urlPortada}" class="d-block w-100" alt="${e.altImagen}">
