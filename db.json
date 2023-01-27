@@ -2,9 +2,18 @@
   "Juegos": [
     {
       "nombre": "Call of Duty Warfare",
-      "precio": "2000",
-      "urlImagen 1": "undefined",
+      "precio": "6500",
+      "Favorito": "true",
+      "urlVideo": "https://cdn.akamai.steamstatic.com/steam/apps/256913488/movie480_vp9.webm?t=1666987383",
+      "urlPortada": "https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1674673359",
+      "altImagen": "Logo Call of Duty Warfare",
+      "urlImagen1": "https://cdn.akamai.steamstatic.com/steam/apps/1938090/ss_b7d2f0b086a9d7d27fbab073e6fabd304ba5a908.600x338.jpg?t=1674673359",
+      "urlImagen2": "https://cdn.akamai.steamstatic.com/steam/apps/1938090/ss_e01ffb1c1ffa22e06ae99dc6fb71f56c91b5b0cc.600x338.jpg?t=1674673359",
+      "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1938090/ss_2d07e12de41060e3aa700b1a207e04ad92175aa4.600x338.jpg?t=1674673359",
+      "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1938090/ss_a9db721e54103cde265065e70cdfc7a39d21b78e.600x338.jpg?t=1674673359",
+      "descripción": "En Call of Duty®: Modern Warfare® II, los jugadores se verán inmersos en un conflicto a escala global sin precedentes que incluye el regreso de Operadores icónicos de la fuerza operativa 141.",
       "desarrollador": "Infiniti Ward, Beenox",
+      "fechaLanzamiento": "2022-10-18",
       "categoria": "Acción",
       "id": 1
     },
@@ -21,7 +30,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/402710/ss_baf4afb4a890d26c7033456f3f318dd9a60603df.600x338.jpg?t=1674065009",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/402710/ss_aa5c65994c0457f0d06d51b94ec932fedfa65ed3.600x338.jpg?t=1674065009",
       "descripción": "Osiris: New Dawn es un implacable juego de supervivencia espacial en el futuro cercano con una sensación cinematográfica y elementos de terror. Juega como un especialista en misiones en modo individual o multijugador para construir tu base planetaria, vehículos pilotables y drones controlables mientras exploras un peligroso sistema solar lejos de la Tierra.",
-      "fechaLanzamiento": "18/01/2023",
+      "fechaLanzamiento": "2023-01-18",
       "desarrollador": "Fenix Fire Entertainment",
       "id": 2
     },
@@ -38,7 +47,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1238860/ss_006c4f68fb8389d8753bb87ba6a37903591d1ec1.600x338.jpg?t=1641312061",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1238860/ss_03f32767fd67f15723ffcd68c92e425265a0ca3d.600x338.jpg?t=1641312061",
       "descripción": "Da las órdenes en la temporada 3: Escalada. Battlefield™ 2042 es un shooter en primera persona que marca el regreso a la emblemática guerra total de la franquicia.",
-      "fechaLanzamiento": "19/11/2021",
+      "fechaLanzamiento": "2021-11-19",
       "desarrollador": "DICE",
       "id": 3
     },
@@ -55,7 +64,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1240440/ss_e1be23823899e262382bdaec7cac6ff8eb9bb1e8.600x338.jpg?t=1673032061",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1240440/ss_139cc855c27fe902e58ba8e7af0aad1aee6ac876.600x338.jpg?t=1673032061",
       "descripción": "El emblemático viaje del Jefe Maestro incluye seis juegos creados para PC y recopilados en una sola experiencia. Ya seas un seguidor de toda la vida o descubras al Spartan 117 por primera vez, la colección Jefe Maestro te resultará la experiencia de juego definitiva de Halo.",
-      "fechaLanzamiento": "19/11/2021",
+      "fechaLanzamiento": "2021-11-19",
       "desarrollador": "343 Industries, Splash Damage",
       "id": 4
     },
@@ -72,7 +81,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/668580/ss_f38ea7320c225ddb200b069968c137d197ca1c05.600x338.jpg?t=1674128828",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/668580/ss_bb714b96cfcffe29ed4a64ae6e527d76ef7f4ab2.600x338.jpg?t=1674128828",
       "descripción": "Ten encuentros explosivos en un delirante y sublime mundo utópico. Adapta tu estilo de combate a cada rival, aprovecha el entorno y mejora el equipamiento para cumplir la misión. El precio de averiguar la verdad tendrás que pagarlo con sangre.",
-      "fechaLanzamiento": "20/01/2023",
+      "fechaLanzamiento": "2023-01-20",
       "desarrollador": "Mundfish",
       "id": 5
     },
@@ -89,7 +98,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_4ce07ae360b166f0f650e9a895a3b4b7bf15e34f.600x338.jpg?t=1671485009",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_bac60bacbf5da8945103648c08d27d5e202444ca.600x338.jpg?t=1671485009",
       "descripción": "Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por toda América en el albor de una nueva era. También incluye acceso al mundo multijugador compartido de Red Dead Online",
-      "fechaLanzamiento": "05/12/2019",
+      "fechaLanzamiento": "2019-12-05",
       "desarrollador": "Rockstar Games",
       "id": 6
     },
@@ -106,7 +115,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/292030/ss_eda99e7f705a113d04ab2a7a36068f3e7b343d17.600x338.jpg?t=1673427135",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/292030/ss_b74d60ee215337d765e4d20c8ca6710ae2362cc2.600x338.jpg?t=1673427135",
       "descripción": "Eres Geralt de Rivia, cazador de monstruos. En un continente devastado por la guerra e infestado de criaturas, tu misión es encontrar a Ciri, la niña de la profecía, un arma viviente que puede alterar el mundo tal y como lo conocemos.",
-      "fechaLanzamiento": "18/05/2015",
+      "fechaLanzamiento": "2015-05-18",
       "desarrollador": "CD PROJEKT RED",
       "id": 7
     },
@@ -123,7 +132,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/990080/ss_8e08976236d29b1897769257ac3c64e9264792a5.600x338.jpg?t=1673637592",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/990080/ss_d4930d675af053dc1e61a876a34fc003e85e261f.600x338.jpg?t=1673637592",
       "descripción": "Hogwarts Legacy es un RPG inmersivo de acción en mundo abierto. Ahora puedes tomar el control de la acción y ser el centro de tu propia aventura en el mundo mágico.",
-      "fechaLanzamiento": "03/01/2023",
+      "fechaLanzamiento": "2023-01-03",
       "desarrollador": "Avalanche Software",
       "id": 8
     },
@@ -140,7 +149,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/632470/ss_ab38615b3a1d0d4309f06772db4bd9db5c250ef7.600x338.jpg?t=1667483149",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/632470/ss_ab38615b3a1d0d4309f06772db4bd9db5c250ef7.600x338.jpg?t=1667483149",
       "descripción": "Disco Elysium - The Final Cut es un revolucionario juego de rol de mundo abierto. Encarna a un detective con un conjunto único de habilidades a su disposición y un barrio entero que recorrer. Interroga personajes memorables, desentraña casos o acepta sobornos. Sé un héroe o un ser humano desastroso.",
-      "fechaLanzamiento": "05/11/2021",
+      "fechaLanzamiento": "2021-11-05",
       "desarrollador": "ZA/UM",
       "id": 9
     },
@@ -157,7 +166,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/306130/ss_da66e194128088e46a5ecad2af455ae2ebe84be0.600x338.jpg?t=1667312669",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/306130/ss_c839c16d7d8a1488467396ec3854bb405afbc835.600x338.jpg?t=1667312669",
       "descripción": "Únete a más de 20 millones de jugadores en el galardonado RPG multijugador online y vive una aventura sin límites en The Elder Scrolls",
-      "fechaLanzamiento": "04/04/2014",
+      "fechaLanzamiento": "2014-04-04",
       "desarrollador": "ZeniMax Online Studios",
       "id": 10
     },
@@ -174,7 +183,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1307710/ss_f9ff1a4932bbc71c1b7391439819da9bff878edd.600x338.jpg?t=1668682379",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1307710/ss_d9ed036463f9c93539174d24d930e5b62766b6c1.600x338.jpg?t=1668682379",
       "descripción": "GRID Legends te ofrece una competición automovilística trepidante. Crea eventos de ensueño, participa en carreras en directo, vive una historia dramática de producción virtual y disfruta de la sensación de las carreras más espectaculares.",
-      "fechaLanzamiento": "24/02/2022",
+      "fechaLanzamiento": "2022-02-24",
       "desarrollador": "Codemasters",
       "id": 11
     },
@@ -191,7 +200,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/331160/ss_5db7a4812eaf5ae7dd0d74237a9349e30bc08dc6.600x338.jpg?t=1571775429",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/331160/ss_bce8deea93eb215b6239f52a8e16cc1711c8994e.600x338.jpg?t=1571775429",
       "descripción": "Juega como Rayo McQueen, un auto de carreras novato que busca ganar fama y fortuna en el Campeonato de la Copa Piston, en la adaptación de videojuegos de Cars de Disney•Pixar.",
-      "fechaLanzamiento": "20/08/2006",
+      "fechaLanzamiento": "2006-08-20",
       "desarrollador": "Beenox",
       "id": 12
     },
@@ -208,7 +217,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1184480/ss_0fd8950bd5c7988d98f69d19b66593f9e7dde3fa.600x338.jpg?t=1668506982",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1184480/ss_db3d6bb65a534d005ef4689cd7133807002a66ff.600x338.jpg?t=1668506982",
       "descripción": "Inertial Drift es un juego de carreras como los de los salones recreativos, ambientado en un mundo retrofuturista al estilo de los años 90, con un modelo de manejo muy singular y con mecánicas de derrape de doble joystick increíblemente satisfactorias.",
-      "fechaLanzamiento": "15/10/2021",
+      "fechaLanzamiento": "2021-10-15",
       "desarrollador": "Level 91 Entertainment",
       "id": 13
     },
@@ -225,7 +234,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/2102520/ss_5ae0f725787ce91b482fd658a2704897a1cabc33.600x338.jpg?t=1671749598",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/2102520/ss_882b140d77d39ec56cc99a1126414773b073c981.600x338.jpg?t=1671749598",
       "descripción": "Apex Point ha estado en desarrollo desde 2018 por un grupo de amigos que tiene como objetivo crear el juego de ensueño de un entusiasta de los automóviles. Es un juego de mundo abierto que tiene como objetivo sumergirte en la cultura automovilística japonesa proporcionando una gran variedad de personalizaciones y tipos de carreras para que puedas elegir tu propio camino.",
-      "fechaLanzamiento": "10/01/2023",
+      "fechaLanzamiento": "2023-01-10",
       "desarrollador": "Apex Studio",
       "id": 14
     },
@@ -242,7 +251,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1692250/ss_648ab537f1f451cc3660e1546a45b03ed4ddb87a.600x338.jpg?t=1668785556",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1692250/ss_e91d1011027e3a8bcb09177ff8e2a48213b2ee9e.600x338.jpg?t=1668785556",
       "descripción": "Entra en la nueva era de la Formula 1® en EA SPORTS™ F1® 22, el videojuego oficial de FIA Formula One World Championship™ 2022. Ponte al volante en una nueva temporada con coches rediseñados y nuevas reglas que definen el día de la carrera, pon a prueba tus habilidades en el nuevo Autódromo Internacional de Miami y disfruta del glamour y la ostentación de la vida en la F1®.",
-      "fechaLanzamiento": "01/07/2022",
+      "fechaLanzamiento": "2022-07-01",
       "desarrollador": "EA Sports",
       "id": 15
     },
@@ -259,7 +268,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1811260/ss_69881245fb65f08d2a8024ea21286abc82745939.600x338.jpg?t=1674476970",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1811260/ss_0b862667df14a47392a8602a643b45fe836274e0.600x338.jpg?t=1674476970",
       "descripción": "Vive la emoción del mayor torneo futbolístico con EA SPORTS™ FIFA 23 y la actualización de la FIFA World Cup™ masculina, ¡disponible el 9 de noviembre sin coste adicional!  !",
-      "fechaLanzamiento": "20/12/2022",
+      "fechaLanzamiento": "2022-12-20",
       "desarrollador": "EA Canada & EA Romania",
       "id": 16
     },
@@ -276,7 +285,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1644960/ss_ee0313e180a4d87ffd5e20a01898f36fb6b060bf.600x338.jpg?t=1660885243",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1644960/ss_8b43a2f8a2806ebc34bcdf9b04f6a691321929a8.600x338.jpg?t=1660885243",
       "descripción": "NBA 2K22 pone todo el universo del baloncesto a tus pies. JUEGA YA a la NBA y la WNBA en entornos realistas contra equipos y jugadores auténticos. Construye tu propio dream team en MyTEAM con las estrellas de hoy y las leyendas de ayer. Emprende tu propio camino profesional en Mi CARRERA y experimenta tu ascenso hasta la NBA. Ejercita tus habilidades de gestión como un poderoso ejecutivo en Mi GM y Mi LIGA. Cualquiera, en cualquier lugar, puede encestar en NBA 2K22. ",
-      "fechaLanzamiento": "10/09/2021",
+      "fechaLanzamiento": "2021-09-10",
       "desarrollador": "Visual Concepts",
       "id": 17
     },
@@ -293,7 +302,7 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1588010/ss_43826d60d7019d61ee373c4a9da135ab0bcd5861.600x338.jpg?t=1669077249",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1588010/ss_733c0f4fb402fe509c56e3113ffc4b5df8c7f262.600x338.jpg?t=1669077249",
       "descripción": "Golpea con más swag en PGA TOUR 2K23. Ahora con profesionales masculinos y femeninos jugables, incluyendo a Tiger Woods, nuevos campos con licencia, más opciones de control, un auténtico PGA TOUR Mi CARRERA, diseñador de campos y habilidades y arquetipos Mi JUGADOR. ",
-      "fechaLanzamiento": "13/10/2022",
+      "fechaLanzamiento": "2022-10-13",
       "desarrollador": "HB Studios",
       "id": 18
     },
@@ -310,15 +319,14 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/380600/ss_86ee59eb45683f912a2763625b0d6eaf5e6e86f3.600x338.jpg?t=1673859903",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/380600/ss_93459ee61ac4f36199c4b0840bad38df2dfae9f3.600x338.jpg?t=1673859903",
       "descripción": "Fishing Planet® es un simulador de pesca multijugador en línea en primera persona muy realista. Desarrollado por ávidos entusiastas de la pesca para brindarle toda la emoción de la pesca real en su PC.",
-      "fechaLanzamiento": "11/08/2015",
+      "fechaLanzamiento": "2015-08-11",
       "desarrollador": "Fishing Planet LLC",
       "id": 19
     },
     {
       "nombre": "PRO ERA",
       "precio": "2100",
-      "categoria": "Deportes",
-      "Favorito": "false",
+      "Favorito": "true",
       "urlVideo": "https://cdn.akamai.steamstatic.com/steam/apps/256916227/movie480_vp9.webm?t=1670595414",
       "urlPortada": "https://cdn.akamai.steamstatic.com/steam/apps/2165690/header.jpg?t=1674502958",
       "altImagen": "Logo PRO ERA",
@@ -327,8 +335,9 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/2165690/ss_38760f1fd3bd51462bfdf710b6cb512461ca8522.600x338.jpg?t=1674502958",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/2165690/ss_1487badf4cc93c8b46d427aa0f3d3d5241efd36d.600x338.jpg?t=1674502958",
       "descripción": "Lleve a su equipo a un Super Bowl, mejore sus habilidades de QB participando en ejercicios o juegue a atrapar virtualmente con sus amigos en su estadio favorito de la NFL. Como QB de la NFL, sentirás la emoción de competir bajo las luces brillantes con miles de fanáticos que gritan.",
-      "fechaLanzamiento": "23/12/2023",
       "desarrollador": "StatusPRO Inc",
+      "fechaLanzamiento": "2023-12-23",
+      "categoria": "Deportes",
       "id": 20
     }
   ],
