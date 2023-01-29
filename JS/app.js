@@ -5,6 +5,12 @@ const catAventura = document.getElementById("catAventura");
 const catCarreras = document.getElementById ("catCarreras");
 const catDeportes = document.getElementById("catDeportes");
 const idSlider = document.getElementById ("idSlider")
+const loginForm = document.getElementById ("loginForm");
+const AdminUsers = document.getElementById ("AdminUsers");
+const AdminGames = document.getElementById ("AdminGames");
+const cerrarSecion = document.getElementById ("cerrarSecion");
+const iniciarSecion =document.getElementById ("iniciarSecion")
+const AdminRegister = document.getElementById ("AdminRegister")
 const categorias =[];
 
 const Categorias = ()=> {
@@ -120,3 +126,38 @@ slider()
 const showProfile = (id)=>{
     window.location =`../HTML/DetallesDeJuego.html#${id}`;
 }
+
+ const usuariospag = [
+    {
+        nombre: "Admin",
+        contraseña: "Admin"
+    },
+    {
+        nombre: "Test",
+        contraseña: "Test"
+    }
+ ];
+  const botonesnav = ()=>{
+loginForm.addEventListener("submit",(e)=>{
+    e.preventDefault()
+    const usuario = e.target[0].value;
+    const contraseña = e.target[1].value;
+            if("Admin" === usuario && "Admin" === contraseña) { 
+                AdminGames.style.display = "block";
+                AdminUsers.style.display = "block";
+                cerrarSecion  .style.display = "block";
+                iniciarSecion. style.display = "none";
+                AdminRegister. style.display = "none";
+                loginForm.reset();
+                
+                
+            } else if(e.usuario === usuario && e.contraseña === contraseña){
+                console.log("Iniciaste secion")
+            }
+        });
+        
+        $('#ModalNav').modal('hide');
+        $('.fade').remove();
+        $('body').removeClass('modal-open');
+    }
+    botonesnav()
