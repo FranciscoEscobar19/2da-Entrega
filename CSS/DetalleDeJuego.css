@@ -2,7 +2,10 @@
     padding: 0;
     margin: 0;
 }
-
+.colorBody{
+    background-color: rgb(37, 1, 37);
+    color: white;
+}
 .tamañoSoyImagen{
     width: 20%;
     height: 30%;
