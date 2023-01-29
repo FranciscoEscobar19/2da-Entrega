@@ -1,6 +1,91 @@
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:5px ;
+    padding-left: 5%;
+    padding-right: 2%;
+    background-color: #131222;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+    padding-top: 2px;
+}
+span{
+    color: #B649FE;
+}
+#nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 8px;
+    margin-top: 5px;
+}
+#nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: medium;
+}
+#nav ul li a:hover{
+    color: #40e495;
+    transition: .3s;
+}
+#buttons {
+    margin-top: 0%;
+    text-align: center;
+}
+
+#btn-hover {
+    width: 150px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    height: 30px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#btn-hover:focus {
+    outline: none;
+}
+#btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+#btn-hover.color-2 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+#btn-hover.color-3 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.icon{
+    display: none;
+}
 .botonSecion{
     border-radius: 20px;
     border: 1px solid black;
+}
+.slide{
+    padding-left: 150px;
 }
 footer{
     background-color: rgb(150, 145, 145);
@@ -15,7 +100,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     margin: 10px;
-   
 }
 .cardStyle{
     display: flex;
