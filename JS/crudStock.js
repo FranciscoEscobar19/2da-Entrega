@@ -6,6 +6,9 @@
         $title=d.querySelector(".crud-title"),
         $template=d.getElementById("crud-template").content,
         $fragment=d.createDocumentFragment();
+
+       
+
         const confirmaciónLogueo =()=>{
             const AdminLogueado = localStorage.getItem ('AdminLogueado');
             if(!AdminLogueado) {
@@ -160,32 +163,29 @@
             }
             if(e.target.matches(".delete")){
                 alert("presionaste el boton eliminar");
-                let isDelete=confirm(`estas seguro q quieres eliminar`+e.target.dataset.nombre);
+                let isDelete=confirm(`estas seguro q quieres eliminar `+ e.target.dataset.id);
                 if(isDelete){
-                    try {
+                    try {                        
                         let option={
                             method:"DELETE",
                             header:{
-                                "Content-type":"application/json;charset=utf-8"
+                                "Content-type":"application/json"
                             }
                         }
-                        let res=await fetch(`http://localhost:3000/Juegos/${e.target.dataset.value}`,option);
-                        let json= await res.json();
+                        const res=await fetch(`http://localhost:3000/Juegos/${e.target.dataset.id}`, option);
+                          const json= await res.json();  
 
                         if(!res.ok) throw {status:res.status, statusText:res.statusText};
-                        location.reload();
-
-                    } catch (error) {
+                        // location.reload();
+                    }
+                      catch (error) {
                           
                 let message =err.statusText || "ocurrio un error";
                 $table.insertAdjacentHTML("afterend",`<p><b>${err.status}:${message}</b></p>`);
                     }
                 }
             }
-
-
         });
-        
 
         
         
