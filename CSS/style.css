@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .colorGeneral{
     background-color: rgb(37, 1, 37);
     color: white;
@@ -6,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top:5px ;
+    margin-top:-20px;;
     padding-left: 5%;
     padding-right: 2%;
     background-color: #131222;
@@ -40,7 +44,7 @@ span{
     text-align: center;
 }
 
-#btn-hover {
+.btn-hover {
     width: 150px;
     font-size: 12px;
     font-weight: 500;
@@ -58,7 +62,7 @@ span{
     transition: all .4s ease-in-out;
 }
 
-#btn-hover:hover {
+.btn-hover:hover {
     background-position: 100% 0;
     -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -66,21 +70,22 @@ span{
     transition: all .4s ease-in-out;
 }
 
-#btn-hover:focus {
+.btn-hover:focus {
     outline: none;
 }
-#btn-hover.color-1 {
+.btn-hover.color-1 {
     background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
-#btn-hover.color-2 {
+.btn-hover.color-2 {
     background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
     box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 }
-#btn-hover.color-3 {
+.btn-hover.color-3 {
     background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
     box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }
+
 .colorLetra{
     color: white;
     background-color: rgb(78, 4, 78);
@@ -116,6 +121,21 @@ footer{
     border-radius: 30px;
     
 }
+#tamañoBoton{
+    border-radius: 20px;
+    color: white;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 180px;
+    background: rgb(180,58,126);
+    background-image: linear-gradient(to right top, #740d55, #70115b, #6c1660, #671a66, #611e6b, #652073, #69227b, #6c2584, #7d2591, #8f259e, #a122aa, #b51db5);
+    
+}
+#tamañoBoton:hover{
+    box-shadow: 0 2px 7px 0  #B649FE;
+}
 .acomodarSlider{
     width: 80%;
     
@@ -124,7 +144,28 @@ footer{
 .colorLetraSlider{
     color: black;
     background-color: rgba(255, 255, 255, 0.311);
-    border-radius: 5px;
+    border-radius: 20px;
 }
+
+#ModalNav{
+    background-image:  linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+}
+#exampleModal{
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+}
+#modalStyle{
+    background-color:rgb(37, 1, 37);
+}
+.botonesform{
+    border-radius: 20px;
+    background-color: rgb(78, 4, 78);
+    border: rgb(78, 4, 78) 1px solid;
+    color: white;
+}
+.botonesform:hover{
+    box-shadow:0 2px 7px 0  rgb(255, 255, 255);
+    
+}
+
 
 

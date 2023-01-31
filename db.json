@@ -275,8 +275,7 @@
     {
       "nombre": "NBA 2K22",
       "precio": "6980",
-      "categoria": "Deportes",
-      "Favorito": "true",
+      "Favorito": "false",
       "urlVideo": "https://cdn.akamai.steamstatic.com/steam/apps/256843283/movie480_vp9.webm?t=1626480438",
       "urlPortada": "https://cdn.akamai.steamstatic.com/steam/apps/1644960/header.jpg?t=1660885243",
       "altImagen": " logo NBA 2K22",
@@ -285,8 +284,9 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1644960/ss_ee0313e180a4d87ffd5e20a01898f36fb6b060bf.600x338.jpg?t=1660885243",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1644960/ss_8b43a2f8a2806ebc34bcdf9b04f6a691321929a8.600x338.jpg?t=1660885243",
       "descripción": "NBA 2K22 pone todo el universo del baloncesto a tus pies. JUEGA YA a la NBA y la WNBA en entornos realistas contra equipos y jugadores auténticos. Construye tu propio dream team en MyTEAM con las estrellas de hoy y las leyendas de ayer. Emprende tu propio camino profesional en Mi CARRERA y experimenta tu ascenso hasta la NBA. Ejercita tus habilidades de gestión como un poderoso ejecutivo en Mi GM y Mi LIGA. Cualquiera, en cualquier lugar, puede encestar en NBA 2K22. ",
-      "fechaLanzamiento": "2021-09-10",
       "desarrollador": "Visual Concepts",
+      "fechaLanzamiento": "2021-09-10",
+      "categoria": "Deportes",
       "id": 17
     },
     {

@@ -7,48 +7,11 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    ​<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body class="colorGeneral">
     <header >
-      <nav  class="navbar navbar-expand-lg" >
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="https://img.freepik.com/iconos-gratis/control-juego_318-776670.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                Bootstrap
-                  </a>  
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li>
-                    <a class="nav-link" style="color: white;" href="#">Inicio</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" style="color: white;" href="#">Categorias</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" style="color: white;" href="#">Contacto</a>
-                  </li>
-                  <li>
-                    <a id="AdminRegister" class="nav-link" style="color: white; display: block;" >Registrate!</a>
-                  </li>
-                  <li>
-                    <a id="AdminUsers" class="nav-link AdminUsers" style="color: white; display: none;" href="./HTML/CrudStock.html">Admin Users</a>
-                  </li>
-                  <li>
-                    <a id="AdminGames" class="nav-link AdminUsers"  style="color: white; display: none;" href="#">Admin Juegos</a>
-                  </li>
-                  
-                </ul>
-                <form class="d-flex" role="search">
-                    <button id="iniciarSecion" class=" m-1 botonSecion  colorLetra" type="button"  style="display: block;"  data-bs-toggle="modal" data-bs-target="#ModalNav"> Iniciar secion</button>
-                    <button id="cerrarSecion" class="m-1 botonSecion colorLetra "  style="display: none;"type="button"> Cerrar secion.</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-          <!-- <nav class="navbar navbar-expand-lg" id="nav">
+          <nav class="navbar navbar-expand-lg" id="nav">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                <h2 class="logo">Devs <span>Games</span> </h2>
@@ -67,22 +30,23 @@
                   <li>
                     <a class="nav-link" style="color: white;" href="#">Contacto</a>
                   </li>
+                  
                   <li>
-                    <a class="nav-link" href="#">Admin Users</a>
+                    <a  id="AdminGames" class="nav-link" style="color: white; display: none;" href="./HTML/CrudStock.html">Admin Juegos</a>
                   </li>
                   <li>
-                    <a class="nav-link" style="color: white;" href="#">Admin Juegos</a>
+                    <a class="nav-link " id="carrito" style="color: white;" href="#">🛒</a>
                   </li>
                   
                 </ul>
                 <form class="d-flex" id="buttons" role="search">
-                    <button class=" m-1 color-1" id="btn-hover" type="button"> Ingresar</button>
-                    <button class="m-1 color-2" id="btn-hover" type="button"> Registrarme</button>
-                    <button class="m-1 color-3" id="btn-hover" type="button"> Cerrar seción</button>
+                    <button class=" m-1 color-1 btn-hover" id="iniciarSecion" type="button" style="display: block;"  data-bs-toggle="modal" data-bs-target="#ModalNav"> Ingresar</button>
+                    <button id="AdminRegister" style="display: block;" class="m-1 color-2 btn-hover" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Registrarme</button>
+                    <button class="m-1 color-3 btn-hover" id="cerrarSecion" style="display: none;" type="button"> Cerrar seción</button>
                 </form>
               </div>
             </div>
-          </nav>  -->
+          </nav> 
     </header>
     <main>
         
@@ -131,16 +95,72 @@
               </article>
             </section>
             <section>
-              <div class="modal" id="ModalNav" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal fade styleModal " id="ModalNav" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                <div class="modal-dialog " >
+                  <div class="modal-content" id="modalStyle">
+                    <div class="modal-header ">
+                      <h2 >Ingresá a tu Cuenta  </h2>  <h2   onclick="myFunction()">!</h2>
+                      <button type="button" class="btn-close btn btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <form class="row crud-form " id="loginForm">
-                        <div class="col-md-4">
+                        <div class="col-md-4 d-flex  flex-column justify-content-center"  style="width: 100%;">
+                                <div class="mb-3" >
+                                    <input type="text"  id="styleinput"  name="Usuario" placeholder="Usuario" class="form-control styleinput" required>
+            
+                                </div>
+                                <div class="mb-3" id="styleinput">
+                                    <input type="password" name="Contraseña" placeholder="Contraseña" class="form-control styleinput" required>
+            
+                                </div>
+                                <button type="submit" id="styleinput" value="Enviar" class=" botonesform">Ingresar</button>
+                        </div>
+                    </form>
+                    </div>
+            </section>
+            <section>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content" id="modalStyle">
+                    <div class="modal-header">
+                      <h2>Iniciá tu registro!</h2>
+                      <button type="button" class="btn-close btn btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="row crud-form " id="registerForm">
+                        <div class="col-md-4 d-flex  flex-column justify-content-center"  style="width: 100%;">
+                                <div class="mb-3">
+                                    <input type="text" name="Nombre" placeholder="Nombre" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                  <input type="text" name="Email" placeholder="Email" class="form-control" required>
+                              </div>
+                              <div class="mb-3">
+                                <input type="text" name="Usuario" placeholder="Usuario" class="form-control" required>
+                            </div>
+                                <div class="mb-3">
+                                    <input type="password" name="Contraseña" placeholder="Contraseña" class="form-control" required>
+                                </div>
+                                <button type="submit" value="Enviar" class=" botonesform ">Registrarme</button>
+                        </div>
+                    </form>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="modal fade" id="modalAdmin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content" id="modalStyle">
+                    <div class="modal-header">
+                      <h2 >Ingresá a tu Cuenta!</h2>
+                      <button type="button" class="btn-close btn btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="row crud-form " id="loginAdmin">
+                        <div class="col-md-4 d-flex  flex-column justify-content-center"  style="width: 100%;">
                                 <div class="mb-3">
                                     <input type="text" name="Usuario" placeholder="Usuario" class="form-control" required>
             
@@ -149,10 +169,13 @@
                                     <input type="password" name="Contraseña" placeholder="Contraseña" class="form-control" required>
             
                                 </div>
-                                <button type="submit" value="Enviar" class=" ">Enviar</button>
+                                <button type="submit" value="Enviar" class=" botonesform ">Ingresar</button>
                         </div>
                     </form>
                     </div>
+                  </div>
+                </div>
+              </div>
             </section>
           </main>
           <footer>
@@ -172,6 +195,7 @@
                   </div>
                 </div>
               </section>
+              
             </footer>
           </body>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

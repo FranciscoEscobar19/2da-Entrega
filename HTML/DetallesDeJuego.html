@@ -11,9 +11,44 @@
     
 </head>
 <body class="colorBody" >
-  <header>
-    <nav></nav>
-        </header>
+  <header >
+    <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+         <h2 class="logo">Devs <span>Games</span> </h2>
+            </a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li>
+              <a class="nav-link" style="color: white;" href="#">Inicio</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li>
+              <a class="nav-link" style="color: white;" href="#">Contacto</a>
+            </li>
+            
+            <li>
+              <a  id="AdminGames" class="nav-link" style="color: white; display: none;" href="./HTML/CrudStock.html">Admin Juegos</a>
+            </li>
+            <li>
+              <a class="nav-link " id="carrito" style="color: white;" href="#">🛒</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex" id="buttons" role="search">
+              <button class=" m-1 color-1 btn-hover" id="iniciarSecion" type="button" style="display: block;"  data-bs-toggle="modal" data-bs-target="#ModalNav"> Ingresar</button>
+              <button id="AdminRegister" style="display: block;" class="m-1 color-2 btn-hover" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Registrarme</button>
+              <button class="m-1 color-3 btn-hover" id="cerrarSecion" style="display: none;" type="button"> Cerrar seción</button>
+          </form>
+        </div>
+      </div>
+    </nav> 
+</header>
         <main >
           <div class="conteiner ">
             <section class="d-flex row flex-row-reverse m-2 justify-content-center ">

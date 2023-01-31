@@ -6,11 +6,14 @@
         $title=d.querySelector(".crud-title"),
         $template=d.getElementById("crud-template").content,
         $fragment=d.createDocumentFragment();
-        // console.log($title);
-        // console.log($form);
-        // console.log($table);
-        // console.log($template);
-        // console.log($fragment);
+        const confirmaciónLogueo =()=>{
+            const AdminLogueado = localStorage.getItem ('AdminLogueado');
+            if(!AdminLogueado) {
+                alert("Debes Loguearte para ingresar a este sitio")
+                return window.location = '/index.html';
+             }
+        }
+        confirmaciónLogueo()
 
         const getAll=async()=>{
           try {
@@ -182,6 +185,7 @@
 
 
         });
+        
 
         
         

@@ -9,6 +9,16 @@ const detallePrecio = document.getElementById("detallePrecio")
 const detalleCategoria = document.getElementById("detalleCategoria")
 const idjuegos = window.location.hash.substring(1);
 
+const confirmaciónLogueo =()=>{
+    const UsuarioLogueado = localStorage.getItem ('UsuarioLogueado');
+    const AdminLogueado = localStorage.getItem ('AdminLogueado');
+    if(!UsuarioLogueado && !AdminLogueado) {
+        alert("Debes Loguearte para ingresar a este sitio")
+        return window.location = '/index.html';
+     }
+    }
+    confirmaciónLogueo()
+
 const mostrarPerfil = ()=>{
     fetch(apiJuegos)
     .then ((response)=>response.json())
@@ -74,3 +84,35 @@ const mostrarPerfil = ()=>{
             })   
         };
 mostrarPerfil()
+
+const ConfirmaciónLogueo =()=>{
+    const UsuarioLogueado = localStorage.getItem ('UsuarioLogueado');
+    const AdminLogueado = localStorage.getItem ('AdminLogueado');
+    if(UsuarioLogueado) {
+        cerrarSecion.style.display = "block";
+        iniciarSecion.style.display = "none";
+        AdminRegister.style.display = "none"
+     } else if (AdminLogueado ){
+        AdminGames.style.display = "block";
+        cerrarSecion.style.display = "block";
+        iniciarSecion.style.display = "none";
+        AdminRegister.style.display = "none"
+     }
+}
+
+ConfirmaciónLogueo()
+
+const CerrarSecion =()=>{
+    const UsuarioLogueado = localStorage.getItem ('UsuarioLogueado');
+    const AdminLogueado = localStorage.getItem ('AdminLogueado');
+    cerrarSecion.addEventListener ("click",()=>{
+    if(UsuarioLogueado){
+        localStorage.removeItem('UsuarioLogueado');
+        window.location.reload()
+    }else if(AdminLogueado){
+        localStorage.removeItem('AdminLogueado');
+        window.location.reload()
+    }
+    })
+}
+CerrarSecion()
