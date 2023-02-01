@@ -345,15 +345,14 @@ span{
 }
 footer{  
     background-color: #131222;
-    height: 250px;
-    padding: 60px 0;   
+    padding-top: 40px; 
+     
 }
 .redes{
     text-align: center;
     bottom: 10px;
     height: 50%;
-    margin-left: 500px;
-    margin-right: 400px;
+    
 }
 .redes a{
     width: 75px;
@@ -422,17 +421,19 @@ footer{
     text-shadow: 0 0 15px #bc2a8d;
     transition: all 0.5s ease;
 } 
+
 .devsgames{
     height: 80px;
     width: 80px;
-    margin-top: 25px;
-    margin-right: 200px;
-    margin-left: -280px;
+    display: flex;
+    justify-content: center;
+    margin-left: 32%;
+    margin-right: 50%;
 }
 .derechos{
     align-content: center;
     align-items: center;
-    padding-left: 620px;
+    padding-left: px;
 
 
 }

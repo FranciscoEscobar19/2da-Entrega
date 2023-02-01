@@ -6,6 +6,9 @@
         $title=d.querySelector(".crud-title"),
         $template=d.getElementById("crud-template").content,
         $fragment=d.createDocumentFragment();
+
+       
+
         const confirmaciónLogueo =()=>{
             const AdminLogueado = localStorage.getItem ('AdminLogueado');
             if(!AdminLogueado) {
@@ -43,7 +46,7 @@
                 $template.querySelector(".edit").dataset.fechaLanzamiento=el.fechaLanzamiento;
                 $template.querySelector(".edit").dataset.Favorito=el.Favorito;
                 $template.querySelector(".delete").dataset.id=el.id;
-                $template.querySelector(".delete").dataset.id=el.nombre;
+                $template.querySelector(".delete").dataset.nombre=el.nombre;
 
                 let $clone=d.importNode($template,true);
                 $fragment.appendChild($clone);
@@ -160,32 +163,34 @@
             }
             if(e.target.matches(".delete")){
                 alert("presionaste el boton eliminar");
-                let isDelete=confirm(`estas seguro q quieres eliminar`+e.target.dataset.nombre);
+                let isDelete=confirm(`estas seguro q quieres eliminar `+ e.target.dataset.nombre);
                 if(isDelete){
-                    try {
+                    try {                        
                         let option={
                             method:"DELETE",
                             header:{
-                                "Content-type":"application/json;charset=utf-8"
+                                "Content-type":"application/json"
                             }
                         }
-                        let res=await fetch(`http://localhost:3000/Juegos/${e.target.dataset.value}`,option);
-                        let json= await res.json();
+                        const res=await fetch(`http://localhost:3000/Juegos/${e.target.dataset.id}`, option);
+                        const json= await res.json();  
 
                         if(!res.ok) throw {status:res.status, statusText:res.statusText};
-                        location.reload();
-
-                    } catch (error) {
+                     location.reload();
+                    }
+                      catch (error) {
                           
                 let message =err.statusText || "ocurrio un error";
                 $table.insertAdjacentHTML("afterend",`<p><b>${err.status}:${message}</b></p>`);
                     }
                 }
             }
-
-
         });
+
         
+        
+        
+
 
         
         

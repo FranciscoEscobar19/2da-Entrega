@@ -169,7 +169,7 @@ loginForm.addEventListener("submit",(e)=>{
     const myFunction =()=>{
         $("#modalAdmin").modal("show");
        }
-    
+       
        const botonesNavAdmin = ()=>{
         loginAdmin.addEventListener("submit",(e)=>{
             const AdminStorage = JSON.parse(localStorage.getItem('Usuarios'))
