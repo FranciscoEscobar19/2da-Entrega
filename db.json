@@ -2,7 +2,7 @@
   "Juegos": [
     {
       "nombre": "Call of Duty Warfare",
-      "precio": "6500",
+      "precio": "3000",
       "Favorito": "true",
       "urlVideo": "https://cdn.akamai.steamstatic.com/steam/apps/256913488/movie480_vp9.webm?t=1666987383",
       "urlPortada": "https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1674673359",
@@ -88,7 +88,6 @@
     {
       "nombre": "Red Dead Redemption 2",
       "precio": "1300",
-      "categoria": "Aventura",
       "Favorito": "false",
       "urlVideo": "https://cdn.akamai.steamstatic.com/steam/apps/256768283/movie480.webm?t=1574881416",
       "urlPortada": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg?t=1671485009",
@@ -98,8 +97,9 @@
       "urlImagen3": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_4ce07ae360b166f0f650e9a895a3b4b7bf15e34f.600x338.jpg?t=1671485009",
       "urlImagen4": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_bac60bacbf5da8945103648c08d27d5e202444ca.600x338.jpg?t=1671485009",
       "descripción": "Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por toda América en el albor de una nueva era. También incluye acceso al mundo multijugador compartido de Red Dead Online",
-      "fechaLanzamiento": "2019-12-05",
       "desarrollador": "Rockstar Games",
+      "fechaLanzamiento": "2019-12-05",
+      "categoria": "Aventura",
       "id": 6
     },
     {

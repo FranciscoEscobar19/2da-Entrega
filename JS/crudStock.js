@@ -46,7 +46,7 @@
                 $template.querySelector(".edit").dataset.fechaLanzamiento=el.fechaLanzamiento;
                 $template.querySelector(".edit").dataset.Favorito=el.Favorito;
                 $template.querySelector(".delete").dataset.id=el.id;
-                $template.querySelector(".delete").dataset.id=el.nombre;
+                $template.querySelector(".delete").dataset.nombre=el.nombre;
 
                 let $clone=d.importNode($template,true);
                 $fragment.appendChild($clone);
@@ -163,7 +163,7 @@
             }
             if(e.target.matches(".delete")){
                 alert("presionaste el boton eliminar");
-                let isDelete=confirm(`estas seguro q quieres eliminar `+ e.target.dataset.id);
+                let isDelete=confirm(`estas seguro q quieres eliminar `+ e.target.dataset.nombre);
                 if(isDelete){
                     try {                        
                         let option={
@@ -173,10 +173,10 @@
                             }
                         }
                         const res=await fetch(`http://localhost:3000/Juegos/${e.target.dataset.id}`, option);
-                          const json= await res.json();  
+                        const json= await res.json();  
 
                         if(!res.ok) throw {status:res.status, statusText:res.statusText};
-                        // location.reload();
+                     location.reload();
                     }
                       catch (error) {
                           
@@ -186,6 +186,11 @@
                 }
             }
         });
+
+        
+        
+        
+
 
         
         
