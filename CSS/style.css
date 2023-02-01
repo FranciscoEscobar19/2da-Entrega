@@ -148,11 +148,41 @@ span{
 }
 
 #ModalNav{
-    background-image:  linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #25aae1, #40e495, #ecce63);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+}
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 #exampleModal{
-    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
 } 
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 #modalStyle{
     background-color:#131222; 
 }
@@ -256,7 +286,7 @@ span{
     width: 0%;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    background: linear-gradient(to right, #6b97f7, #7525e2, #f7137e);
     transition: 0.8s ease width;
     left: 0;
 }
