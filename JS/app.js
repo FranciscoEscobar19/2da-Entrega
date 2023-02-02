@@ -147,6 +147,7 @@ const showProfile = (id)=>{
      })
  }
  registroUsers()
+
 // --------------------------------------------------------------LOGIN---------------------------------------------------------------------------------
   const botonesnav = ()=>{
 loginForm.addEventListener("submit",(e)=>{

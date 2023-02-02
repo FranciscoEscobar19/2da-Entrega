@@ -22,8 +22,8 @@
           try {
             let res= await fetch(" http://localhost:3000/Juegos/");
             let json = await res.json();
-            if(!res.ok) throw {status:res.status,statusText:res.statusText};
-            console.log(json);
+            if(!res.ok) 
+             throw {status:res.status,statusText:res.statusText};       
             json.forEach(el => {
                 $template.querySelector(".name").textContent=el.nombre;
                 $template.querySelector(".precio").textContent=el.precio;
