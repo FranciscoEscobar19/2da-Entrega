@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/stylecontacto.css">
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="container" id="formulario">
+      <h1 class="text-center my-3">Contactate con nosotros</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" pattern="[A-Za-z]+" required title="El nombre debe contener solo letras" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <label for="apellido">Apellido:</label>
+              <input type="text" class="form-control" id="apellido" pattern="[A-Za-z]+" required title="El apellido debe contener solo letras" placeholder="Apellido">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Correo electrónico">
+            </div>
+            <div class="form-group">
+              <label for="consulta">Consulta:</label>
+              <textarea class="form-control" id="consulta" rows="3" required placeholder="Dejanos tu consulta aquí"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h3>Información de contacto</h3>
+          <p>Dirección: General Paz 576, San Miguel de Tucuman</p>
+          <p>Teléfono: 0381 578-3030</p>
+          <p>Email: devgames@soporte.com</p>
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://twitter.com/">Twitter</a>
+          <a href="https://www.instagram.com/">Instagram</a><br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1137.6648148254455!2d-65.20704385273234!3d-26.837478445515252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1675354249515!5m2!1ses-419!2sar" width="80%" height="50%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 
