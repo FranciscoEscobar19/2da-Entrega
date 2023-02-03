@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .contact-form {
     --form-ok-color: #4caf50;
     --form-error-color: #770902;
@@ -37,7 +42,7 @@
   }
   
   .contact-form *::placeholder {
-    color: #000;
+    color: #302d2d;
   }
   
   .contact-form [required]:valid {
@@ -79,3 +84,126 @@
         opacity: 1;
       }
   }
+.formulario{
+  background: #302d2d;
+  margin-top: 10%;
+  border-radius: 2%;
+  box-shadow: 0 2px 7px 0 black;
+  width:700px ;
+  overflow: hidden;
+  width: 60%;
+  height: auto;
+  color: white;
+}
+.botonesform1{
+
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 4px;
+  border: solid #40e495;
+  border-radius: 2%;
+  margin: auto;
+  margin-bottom: 2%;
+  background-color:#302d2d ;
+}
+.botonesform1:hover{
+  
+  background: #40e495;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #40e495, 0 0 25px #40e495, 0 0 50px #40e495, 0 0 100px #40e495;
+}
+
+.info{
+  margin-top: 8%;
+  height: 500px;
+  width: 400px;
+  color: white;
+  
+}
+.ubicacion{
+  margin-top: 90px;
+}
+.ubicacion h3{
+  display: inline-block;
+  margin-left: 30%;
+}
+.ubicacion h6{
+  margin-left: 5px;
+}
+.ubicacion p{
+  margin-left: 20%;
+  margin-top: 10%;
+  font-style: oblique;
+}
+.ubicacion .p{
+  margin-left: 15%;
+}
+.seguinos{
+  margin-top: 30px;
+}
+.seguinos h3{
+  display:inline-block;
+  margin-left: 30%;
+}
+.redes{
+  margin-left: 18%;
+  margin-top: 15px;
+}
+.redes a{
+  color: white;
+  margin: 0 10px 0 10px;
+}
+.redes i:hover.fa-whatsapp{
+  color: #4dc247;
+  text-shadow: 0 0 15px #4dc247;
+  transition: all 0.5s ease;
+} 
+.redes i:hover.fa-twitter{
+  color: #09cdf0;
+  text-shadow: 0 0 15px #09cdf0;
+  transition: all 0.5s ease;
+} 
+.redes i:hover.fa-facebook{
+  color: #315ce9;
+  text-shadow: 0 0 15px #315ce9;
+  transition: all 0.5s ease;
+} 
+.redes i:hover.fa-instagram{
+  color: #ca10a5;
+  text-shadow: 0 0 15px #ca10a5;
+  transition: all 0.5s ease;
+} 
+.redes i:hover.fa-linkedin{
+  color: #1608dd;
+  text-shadow: 0 0 15px #1608dd;
+  transition: all 0.5s ease;
+} 
+body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-evenly ;
+  background: linear-gradient(334deg, #6bf787, #62dff0, #8513f7);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+  background-size: 200% 200%;
+  width: 100%;
+  height: 100%;
+}
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
