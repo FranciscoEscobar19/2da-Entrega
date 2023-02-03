@@ -2,8 +2,6 @@ function contactForm() {
     const d =document;
    const $form=d.querySelector(".contact-form"),
    $inputs=d.querySelectorAll(".contact-form [required]");
-   console.log($inputs);
-   console.log($form);
  
     $inputs.forEach(input=>{
         const $span=d.createElement("span");
@@ -20,7 +18,6 @@ function contactForm() {
             let $input =e.target,
             
             pattern =$input.pattern || $input.dataset.pattern;
-            console.log($input.name);
 
             if(pattern && $input.value !==""){
                 let regex=new RegExp(pattern);
@@ -39,12 +36,12 @@ function contactForm() {
 
         d.addEventListener("submit",e=>{
             e.preventDefault();
-            alert("enviando formulario");
+            alert("Enviando formulario");
             const $loader=d.querySelector(".contact-form-loader"),
             $response=d.querySelector(".contact-form-response");
             $loader.classList.remove("none");
 
-        fetch("https://formsubmit.co/ajax/rodrigoromano2019@gmail.com",{
+        fetch("https://formsubmit.co/ajax/escobarefrancisco@gmail.com",{
             method: "POST",
             body:new FormData(e.target)
 
@@ -52,7 +49,6 @@ function contactForm() {
         })
         .then(res=>res.ok ? res.json(): Promise.reject(res))
         .then(json=>{
-            console.log(json);
             $loader.classList.add("none");
             $response.classList.remove("none");
             $response.innerHTML=`<p>${json.message}</p>`
@@ -67,7 +63,7 @@ function contactForm() {
         .finally(()=>setTimeout(()=>{
             $response.classList.add("none");
             $response.innerHTML="";
-        },3000));    
+        },5000));    
 
 
 
