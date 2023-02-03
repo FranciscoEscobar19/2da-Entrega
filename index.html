@@ -107,11 +107,11 @@
                       <form class="row crud-form " id="loginForm">
                         <div class="col-md-4 d-flex  flex-column justify-content-center"  style="width: 100%;">
                                 <div class="mb-3 formulario" >
-                                    <input type="text" id="styleinput" name="" class="name" required  pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10" title="Puede contener letras en mayusculas y/o minusculas y numeros, mayor a 4 caracteres y menor a 10 caracteres"><span class="barra"></span>
+                                    <input type="text" id="styleinput" name="" class="name" required  pattern="[a-zA-Z0-9]+" minlength="4" maxlength="11" title="Puede contener letras en mayusculas y/o minusculas y numeros, mayor a 4 caracteres y menor a 10 caracteres"><span class="barra"></span>
                                     <label>Usuario</label>
                                 </div>
                                 <div class="mb-3 formulario" id="styleinput">
-                                    <input class="name" type="password" name="" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="Debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula."><span class="barra"></span>
+                                    <input class="name" type="password" name="" required title="Debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula."><span class="barra"></span>
                                     <label>Contraseña</label>
                                     <a class="contraseña" href="#">Olvidaste tu contraseña?</a>
                                 </div>
@@ -132,7 +132,7 @@
                       <form class="row crud-form " id="registerForm">
                         <div class="col-md-4 d-flex  flex-column justify-content-center"  style="width: 100%;">
                                 <div class="mb-3">
-                                    <input type="text" name="Nombre" placeholder="Nombre" class="form-control" required pattern="/^([A-Z]{1}[a-zñáéíóú]+[\s]*)+$/" title="El nombre debe comenzar con una letra mayuscula y luego minusculas, no acepta numeros.">
+                                    <input type="text" name="Nombre" placeholder="Nombre" class="form-control" required >
                                 </div>
                                 <div class="mb-3">
                                   <input type="text" name="Email" placeholder="Email" class="form-control" required pattern="/^\S+@\S+\.\S+$/" title="ejemplo@ejemplo.com " >
@@ -141,7 +141,7 @@
                                 <input type="text" name="Usuario"  placeholder="Usuario" class="form-control" required pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10" title="Puede contener letras en mayusculas y/o minusculas y numeros, mayor a 4 caracteres y menor a 10 caracteres.">
                             </div>
                                 <div class="mb-3">
-                                    <input type="password" name="Contraseña" placeholder="Contraseña" class="form-control" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="Debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+                                    <input type="password" name="Contraseña" placeholder="Contraseña" class="form-control" required >
                                 </div>
                                 <button type="submit" value="Enviar" id="btn-enviar" class="botonesform ">Registrarme</button>
                         </div>
@@ -164,11 +164,11 @@
                       <form class="row crud-form " id="loginAdmin">
                         <div class="col-md-4 d-flex  flex-column justify-content-center"  style="width: 100%;">
                                 <div class="mb-3 formulario">
-                                    <input type="text" name="" class="name" required  pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10" title="Puede contener letras en mayusculas y/o minusculas y numeros, mayor a 4 caracteres y menor a 10 caracteres"><span class="barra"></span>
+                                    <input type="text" name="" class="name" required  pattern="[a-zA-Z0-9]+" minlength="4" maxlength="11" title="Puede contener letras en mayusculas y/o minusculas y numeros, mayor a 4 caracteres y menor a 10 caracteres"><span class="barra"></span>
                                     <label>Usuario</label>
                                 </div>
                                 <div class="mb-3 formulario">
-                                    <input type="password" name="" class="name" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="Debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula."><span class="barra"></span>
+                                    <input type="password" name="" class="name" required title="Debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula."><span class="barra"></span>
                                     <label>Contraseña</label>
                                     <a class="contraseña" href="#">Olvidaste tu contraseña?</a>
                                 </div>
