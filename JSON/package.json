@@ -1,0 +1,23 @@
+{
+  "name": "2da-entrega",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoEscobar19/2da-Entrega.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranciscoEscobar19/2da-Entrega/issues"
+  },
+  "homepage": "https://github.com/FranciscoEscobar19/2da-Entrega#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
