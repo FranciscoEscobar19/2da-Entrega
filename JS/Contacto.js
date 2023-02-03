@@ -1,3 +1,13 @@
+const confirmaciónLogueo =()=>{
+    const UsuarioLogueado = localStorage.getItem ('UsuarioLogueado');
+    const AdminLogueado = localStorage.getItem ('AdminLogueado');
+    if(!UsuarioLogueado && !AdminLogueado) {
+        alert("Debes Loguearte para ingresar a este sitio")
+        return window.location = '/index.html';
+     }
+    }
+    confirmaciónLogueo()
+    
 function contactForm() {
     const d =document;
    const $form=d.querySelector(".contact-form"),
@@ -72,5 +82,44 @@ function contactForm() {
         });
     };
         document.addEventListener("DOMContentLoaded",contactForm());
+
+        const navbar=()=>{
+            const AdminGames = document.getElementById ("AdminGames");
+            const cerrarSecion = document.getElementById ("cerrarSecion");
+            const iniciarSecion =document.getElementById ("iniciarSecion");
+            const AdminRegister = document.getElementById ("AdminRegister");
+            const ConfirmaciónLogueo =()=>{
+                const UsuarioLogueado = localStorage.getItem ('UsuarioLogueado');
+                const AdminLogueado = localStorage.getItem ('AdminLogueado');
+                if(UsuarioLogueado) {
+                    cerrarSecion.style.display = "block";
+                    iniciarSecion.style.display = "none";
+                    AdminRegister.style.display = "none"
+                 } else if (AdminLogueado ){
+                    AdminGames.style.display = "block";
+                    cerrarSecion.style.display = "block";
+                    iniciarSecion.style.display = "none";
+                    AdminRegister.style.display = "none"
+                 }
+            }
+            
+            ConfirmaciónLogueo()
+        
+            const CerrarSecion =()=>{
+                const UsuarioLogueado = localStorage.getItem ('UsuarioLogueado');
+                const AdminLogueado = localStorage.getItem ('AdminLogueado');
+                cerrarSecion.addEventListener ("click",()=>{
+                if(UsuarioLogueado){
+                    localStorage.removeItem('UsuarioLogueado');
+                    window.location.reload()
+                }else if(AdminLogueado){
+                    localStorage.removeItem('AdminLogueado');
+                    window.location.reload()
+                }
+                })
+            }
+            CerrarSecion()        
+        }
+        navbar()
 
    

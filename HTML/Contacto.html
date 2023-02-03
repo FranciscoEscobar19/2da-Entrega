@@ -7,11 +7,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/stylesContacto.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Contacto DevsGames</title>
     <script src="https://kit.fontawesome.com/b1f70e9529.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+  <header>
+    <nav class="navbar navbar-expand-lg m-0" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+           <h2 class="logo">Devs <span>Games</span> </h2>
+              </a>  
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li>
+                <a class="nav-link" style="color: white;" href="../index.html">Inicio</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li>
+                <a class="nav-link" style="color: white;" href="#">Contacto</a>
+              </li>
+              
+              <li>
+                <a  id="AdminGames" class="nav-link" style="color: white; display: none;" href="./CrudStock.html">Admin Juegos</a>
+              </li>
+              
+              
+            </ul>
+            <form class="d-flex" id="buttons" role="search">
+                <button class=" m-1 color-1 btn-hover" id="iniciarSecion" type="button" style="display: block;"  data-bs-toggle="modal" data-bs-target="#ModalNav"> Ingresar</button>
+                <button id="AdminRegister" style="display: block;" class="m-1 color-2 btn-hover" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Registrarme</button>
+                <button class="m-1 color-3 btn-hover" id="cerrarSecion" style="display: none;" type="button"> Cerrar seción</button>
+            </form>
+          </div>
+        </div>
+      </nav> 
+</header>
+  <section class="body">
     <article class="info">
      <div class="ubicacion">
       <h3>UBICACION</h3>
@@ -24,11 +61,11 @@
       <div class="seguinos">
       <h3>SEGUINOS</h3>
       <div class="redes">
-      <a class="facebook col-2" href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-      <a class="twitter col-2" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-      <a class="whatsapp col-2" href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
-      <a class="linkedin col-2" href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-      <a class="instagram col-2" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a class="facebook col-2" href="https://es-la.facebook.com/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a class="twitter col-2" href="https://twitter.com/?lang=es"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a class="whatsapp col-2" href="">https://web.whatsapp.com/<i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+        <a class="linkedin col-2" href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        <a class="instagram col-2" href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
       </div>
       </div>
     </article>
@@ -53,6 +90,7 @@
              </form>
          </form>
     </article>
+  </section>
 </body>
 <script src="../JS/Contacto.js"></script>
 </html>
