@@ -3,7 +3,7 @@
     padding: 0;
 }
 .colorGeneral{
-    background-color: rgb(37, 1, 37);
+    background-color: #2D2C54;
     color: white;
     display: flex;
     flex-direction: column;
@@ -120,6 +120,10 @@ span{
     padding: 30px;
     border-radius: 30px;
     
+}
+.vercardsje:hover{
+    transform: translateY(-15px);
+    box-shadow:2px 2px 8px 0 rgb(209, 102, 221), 4px 4px 16px 0 #d66, 0px 0px 24px 2px rgb(221, 197, 102);
 }
 #tamañoBoton{
     border-radius: 20px;
@@ -294,10 +298,7 @@ span{
     width: 100%;
 }
 .botonesform{
-    /* border-radius: 20px;
-    background-color: rgb(78, 4, 78);
-    border: rgb(78, 4, 78) 1px solid;
-    color: white; */
+   
     padding: 10px 20px;
     color: #8f7cec;
     font-size: 16px;
@@ -319,10 +320,7 @@ span{
     box-shadow: 0 0 5px #8f7cec, 0 0 25px #8f7cec, 0 0 50px #8f7cec, 0 0 100px #8f7cec;
 }
 .botonesform1{
-    /* border-radius: 20px;
-    background-color: rgb(78, 4, 78);
-    border: rgb(78, 4, 78) 1px solid;
-    color: white; */
+
     padding: 10px 20px;
     color: #40e495;
     font-size: 16px;
@@ -337,7 +335,7 @@ span{
     background-color:#131222 ;
 }
 .botonesform1:hover{
-    /* box-shadow:0 2px 7px 0  rgb(255, 255, 255); */
+    
     background: #40e495;
     color: #fff;
     border-radius: 5px;
@@ -437,3 +435,13 @@ footer{
 
 
 }
+.linea{
+ background-image: linear-gradient(to right, #3bc6ed, #7525e2, #f7137e);
+ height: 8px;
+ border: 0;
+}
+.titulo{
+    justify-content: center;
+    display: flex;
+}
+
