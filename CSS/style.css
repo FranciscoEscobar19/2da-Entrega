@@ -313,7 +313,6 @@ span{
     background-color:#131222 ;
 }
 .botonesform:hover{
-    /* box-shadow:0 2px 7px 0  rgb(255, 255, 255); */
     background: #8f7cec;
     color: #fff;
     border-radius: 5px;
