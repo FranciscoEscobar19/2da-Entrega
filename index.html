@@ -125,11 +125,11 @@
                                     <label >Nombre</label>
                                 </div>
                                 <div class="mb-3 formularioR">
-                                  <input type="text" name=""  required pattern="/^\S+@\S+\.\S+$/" title="ejemplo@ejemplo.com " ><span class="barraR"></span>
+                                  <input type="text" name=""  required pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="ejemplo@ejemplo.com " ><span class="barraR"></span>
                                   <label >E-mail</label>
                               </div>
                               <div class="mb-3 formularioR">
-                                <input type="text" name=""   required pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10" title="Puede contener letras en mayusculas y/o minusculas y numeros, mayor a 4 caracteres y menor a 10 caracteres."><span class="barraR"></span>
+                                <input type="text" name=""   required pattern="[a-zA-Z0-9]+" minlength="4" maxlength="11" title="Puede contener letras en mayusculas y/o minusculas y numeros, mayor a 4 caracteres y menor a 10 caracteres."><span class="barraR"></span>
                                 <label>Usuario</label>
                             </div>
                                 <div class="mb-3 formularioR">
