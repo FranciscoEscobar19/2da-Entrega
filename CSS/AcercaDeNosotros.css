@@ -1,10 +1,13 @@
 *
 body, html{
      margin:50px;
-    background: black;
-    color: #7FFF00;
+    /* background: black; */
+    /* color: #7FFF00; */
     display: flex;
     flex-wrap: wrap;
+	background: linear-gradient(90deg, rgba(1,1,1,1) 0%, rgba(49,48,103,1) 35%, rgba(97,30,108,1) 97%, rgba(136,10,117,1) 100%);
+	color: #fff;
+
     
     
  }
@@ -14,7 +17,7 @@ body{
 
 
 
-.image-area
+.card
 {
     top: 50%;
     left: 60%;
@@ -22,10 +25,17 @@ body{
 	position: relative;       
 }
 
+/* .card:hover{
+    transform: scale(1.04);
 
+} */
 
+.fotos{
+    padding: 10px;
+    object-fit: cover;
+}
 
-.img-wrapper
+.fotos
 {
 	width: 300px;
 	height: 400px;
@@ -33,7 +43,7 @@ body{
 	overflow: hidden;
 }
 
-.img-wrapper:before
+.fotos:before
 {
 	content: '';
 	position: relative;
@@ -47,25 +57,25 @@ body{
 	transition: .5s;
 }
  
-.img-wrapper:hover:before
+.fotos:hover:before
 {
 	left: -180%;
-}
+} */
 
-.img-wrapper img
+.fotos img
 {
 	height: 400px;
 	width: 300px;
 	filter: grayscale(100%);
 	transition: 2s;
 }
-.img-wrapper:hover img
+.fotos:hover img
 {
 	filter: grayscale(0%);
 	transform: scale(1.1);
 }
 
-.img-wrapper h2
+.fotos h2
 {
 	background: rgb(12, 12, 12);
 	font-family: Poppins;
@@ -82,12 +92,12 @@ body{
 	transition: 1s;
 }
 
-.img-wrapper:hover h2
+.fotos:hover h2
 {
 	transform: perspective(400px) rotateY(0deg);
 }
 
-.img-wrapper ul
+.fotos ul
 {
 	position: absolute;
 	top: 0;
@@ -98,7 +108,7 @@ body{
 	background: rgba(255,255,255,0);
 }
 
-.img-wrapper ul li
+.fotos ul li
 {
 	background: #7FFF00;
 	height: 40px;
@@ -110,44 +120,44 @@ body{
 	transform-origin: left;
 }
 
-.img-wrapper:hover ul li
+.fotos:hover ul li
 {
 	transform: perspective(800px) rotateY(0deg);
 }
 
-.img-wrapper:hover ul li:nth-child(1)
+.fotos:hover ul li:nth-child(1)
 {
 	transition-delay: .2s;
 }
 
-.img-wrapper:hover ul li:nth-child(2)
+.fotos:hover ul li:nth-child(2)
 {
 	transition-delay: .6s;
 }
 
-.img-wrapper:hover ul li:nth-child(3)
+.fotos:hover ul li:nth-child(3)
 {
 	transition-delay: .8s;
 }
 
-.img-wrapper:hover ul li:nth-child(4)
+.fotos:hover ul li:nth-child(4)
 {
 	transition-delay: 1s;
 }
 
-.img-wrapper ul li a
+.fotos ul li a
 {
 	color: rgb(12, 12, 12);
 	background: rgba(255,255,255,0);
 }
 
-.img-wrapper ul li i
+.fotos ul li i
 {
 	color: rgb(12, 12, 12);
 	background: rgba(255,255,255,0);
 }
 
-.img-wrapper ul li i:hover
+.fotos ul li i:hover
 {
 	color: #fff;
 	background: rgba(255,255,255,0);
