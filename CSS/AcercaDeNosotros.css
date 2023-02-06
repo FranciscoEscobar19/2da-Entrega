@@ -77,8 +77,8 @@ body{
 
 .fotos h2
 {
-	background: rgb(12, 12, 12);
-	font-family: Poppins;
+	background: rgb(51, 1, 71);
+	font-family: Arial, Helvetica, sans-serif;
 	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
@@ -110,7 +110,7 @@ body{
 
 .fotos ul li
 {
-	background: #7FFF00;
+	background: rgb(57, 1, 71);
 	height: 40px;
 	width: 40px;
 	text-align: center;
