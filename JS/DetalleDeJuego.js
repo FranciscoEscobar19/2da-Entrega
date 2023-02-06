@@ -82,6 +82,7 @@ const mostrarPerfil = ()=>{
             }
             })
             })   
+    .catch (error => console.error(error));
         };
 mostrarPerfil()
 
