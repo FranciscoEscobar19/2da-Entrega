@@ -1,8 +1,6 @@
 *
 body, html{
-     margin:50px;
-    /* background: black; */
-    /* color: #7FFF00; */
+    margin:50px;
     display: flex;
     flex-wrap: wrap;
 	background: linear-gradient(90deg, rgba(1,1,1,1) 0%, rgba(49,48,103,1) 35%, rgba(97,30,108,1) 97%, rgba(136,10,117,1) 100%);
@@ -22,8 +20,11 @@ body{
     top: 50%;
     left: 60%;
 	transform: translate(-50%, -50%);
-	position: relative;       
+	position: relative;      
+	
 }
+
+
 
 .fotos{
     padding: 10px;
@@ -32,8 +33,8 @@ body{
 
 .fotos
 {
-	width: 300px;
-	height: 400px;
+	width: 100%;
+	height: auto;
 	position: relative;
 	overflow: hidden;
 }
@@ -60,7 +61,6 @@ body{
 .fotos img
 {
 	height: 400px;
-	width: 300px;
 	filter: grayscale(100%);
 	transition: 2s;
 }
@@ -105,7 +105,7 @@ body{
 
 .fotos ul li
 {
-	background: rgb(57, 1, 71);
+	background: rgb(73, 65, 147);
 	height: 40px;
 	width: 40px;
 	text-align: center;
