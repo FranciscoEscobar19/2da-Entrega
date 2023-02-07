@@ -1,14 +1,12 @@
-*
+
 body, html{
     margin:50px;
     display: flex;
     flex-wrap: wrap;
 	background: linear-gradient(90deg, rgba(1,1,1,1) 0%, rgba(49,48,103,1) 35%, rgba(97,30,108,1) 97%, rgba(136,10,117,1) 100%);
 	color: #fff;
-
-    
-    
  }
+
 body{
     font-family: "Raleway","Microsoft JhenHei", Arial, sans-serif;
 }
@@ -23,8 +21,6 @@ body{
 	position: relative;      
 	
 }
-
-
 
 .fotos{
     padding: 10px;
