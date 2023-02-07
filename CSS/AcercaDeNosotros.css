@@ -1,0 +1,159 @@
+*
+body, html{
+    margin:50px;
+    display: flex;
+    flex-wrap: wrap;
+	background: linear-gradient(90deg, rgba(1,1,1,1) 0%, rgba(49,48,103,1) 35%, rgba(97,30,108,1) 97%, rgba(136,10,117,1) 100%);
+	color: #fff;
+
+    
+    
+ }
+body{
+    font-family: "Raleway","Microsoft JhenHei", Arial, sans-serif;
+}
+
+
+
+.card
+{
+    top: 50%;
+    left: 60%;
+	transform: translate(-50%, -50%);
+	position: relative;      
+	
+}
+
+
+
+.fotos{
+    padding: 10px;
+    object-fit: cover;
+}
+
+.fotos
+{
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.fotos:before
+{
+	content: '';
+	position: relative;
+	top: 0;
+	left: 180%;
+	height: 100%;
+	width: 100%;
+	background: rgba(255,255,255,.3);
+	z-index: 1;
+	transform: skew(45deg);
+	transition: .5s;
+}
+ 
+.fotos:hover:before
+{
+	left: -180%;
+} 
+
+.fotos img
+{
+	height: 400px;
+	filter: grayscale(100%);
+	transition: 2s;
+}
+.fotos:hover img
+{
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+
+.fotos h2
+{
+	background: rgb(51, 1, 71);
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 10px 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	transform: perspective(400px) rotateY(90deg);
+	transform-origin: right;
+	transition: 1s;
+}
+
+.fotos:hover h2
+{
+	transform: perspective(400px) rotateY(0deg);
+}
+
+.fotos ul
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: rgba(255,255,255,0);
+}
+
+.fotos ul li
+{
+	background: rgb(73, 65, 147);
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	transform: perspective(800px) rotateY(90deg);
+	transition: .5s;
+	transform-origin: left;
+}
+
+.fotos:hover ul li
+{
+	transform: perspective(800px) rotateY(0deg);
+}
+
+.fotos:hover ul li:nth-child(1)
+{
+	transition-delay: .2s;
+}
+
+.fotos:hover ul li:nth-child(2)
+{
+	transition-delay: .6s;
+}
+
+.fotos:hover ul li:nth-child(3)
+{
+	transition-delay: .8s;
+}
+
+.fotos:hover ul li:nth-child(4)
+{
+	transition-delay: 1s;
+}
+
+.fotos ul li a
+{
+	color: rgb(12, 12, 12);
+	background: rgba(255,255,255,0);
+}
+
+.fotos ul li i
+{
+	color: rgb(12, 12, 12);
+	background: rgba(255,255,255,0);
+}
+
+.fotos ul li i:hover
+{
+	color: #fff;
+	background: rgba(255,255,255,0);
+}
